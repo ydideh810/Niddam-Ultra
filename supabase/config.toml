@@ -54,9 +54,9 @@ file_size_limit = "50MiB"
 [auth]
 # The base URL of your website. Used as an allow-list for redirects and for constructing URLs used
 # in emails.
-site_url = "http://localhost:3000"
+site_url = "https://nidultra.net"
 # A list of *exact* URLs that auth providers are permitted to redirect to post authentication.
-additional_redirect_urls = ["https://localhost:3000"]
+additional_redirect_urls = ["https://nidultra.com"]
 # How long tokens are valid for, in seconds. Defaults to 3600 (1 hour), maximum 604,800 (1 week).
 jwt_expiry = 604800
 # If disabled, the refresh token will never expire.
@@ -78,11 +78,11 @@ enable_confirmations = true
 
 # Uncomment to customize email template
 [auth.email.template.magic_link]
-subject = "ChatLabs: Confirm your email"
+subject = "NIDULTRA: Confirm your email"
 content_path = "./supabase/templates/magic_link.html"
 
 [auth.email.template.confirmation]
-subject = "ChatLabs: Verify your email"
+subject = "NIDULTRA: Verify your email"
 content_path = "./supabase/templates/confirmation.html"
 
 
